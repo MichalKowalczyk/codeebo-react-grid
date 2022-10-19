@@ -1,0 +1,49 @@
+{
+  "name": "codeebo-react-grid",
+  "version": "1.0.2",
+  "description": "React Grid Components - Row, Col, Grid, Container",
+  "repository": "MichalKowalczyk/codeebo-react-grid",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "keywords": [
+    "react",
+    "grid",
+    "columns",
+    "react-component",
+    "container"
+  ],
+  "author": {
+    "name": "Codeebo Michał Kowalczyk",
+    "email": "hello@codeebo.com"
+  },
+  "homepage": "https://github.com/MichalKowalczyk/codeebo-react-grid",
+  "engines": {
+    "node": ">=14",
+    "npm": ">=6"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "start": "rollup -c -w"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "react": ">= 18.2.0 < 2",
+    "react-dom": ">= 18.2.0 < 2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "^1.29.0",
+    "rollup-plugin-sass": "^1.2.2",
+    "rollup-plugin-typescript2": "^0.25.3",
+    "sass": "^1.55.0",
+    "typescript": "^4.8.4"
+  },
+  "files": [
+    "dist"
+  ]
+}

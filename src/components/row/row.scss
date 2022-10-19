@@ -1,0 +1,86 @@
+@use "sass:list";
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+
+  &.debug {
+    border: 1px solid coral;
+
+    .col {
+      border: 1px solid cadetblue;
+    }
+  }
+
+  &.align-left {
+    align-items: left;
+  }
+
+  &.align-center {
+    align-items: center;
+  }
+
+  &.align-right {
+    align-items: right;
+  }
+
+  $gapIndexes: 1, 2, 3, 4, 5, 6;
+  $gapSize: 64, 32, 24, 16, 8, 0;
+  $gapSizeMd: 32, 24, 16, 8, 4, 0;
+  $gapSizeSm: 24, 16, 8, 4, 0, 0;
+  $gapSizeXs: 16, 8, 4, 0, 0, 0;
+
+  @each $i in $gapIndexes {
+    &.row-gap-#{list.nth($gapSize, $i)} {
+      margin-left: -#{list.nth($gapSize, $i)}px;
+      width: calc(100% + (2 * #{list.nth($gapSize, $i)}px));
+      .col {
+        padding: 0px #{list.nth($gapSize, $i)}px;
+      }
+    }
+  }
+  @media all and (max-width: 1200px) {
+    @each $i in $gapIndexes {
+      &.row-gap-#{list.nth($gapSize, $i)} {
+        margin-left: -#{list.nth($gapSizeMd, $i)}px;
+        width: calc(100% + (2 * #{list.nth($gapSizeMd, $i)}px));
+        .col {
+          padding: 0px #{list.nth($gapSizeMd, $i)}px;
+        }
+      }
+    }
+  }
+  @media all and (max-width: 900px) {
+    @each $i in $gapIndexes {
+      &.row-gap-#{list.nth($gapSize, $i)} {
+        margin-left: -#{list.nth($gapSizeSm, $i)}px;
+        width: calc(100% + (2 * #{list.nth($gapSizeSm, $i)}px));
+        .col {
+          padding: 0px #{list.nth($gapSizeSm, $i)}px;
+        }
+      }
+    }
+  }
+  @media all and (max-width: 600px) {
+    @each $i in $gapIndexes {
+      &.row-gap-#{list.nth($gapSize, $i)} {
+        margin-left: -#{list.nth($gapSizeXs, $i)}px;
+        width: calc(100% + (2 * #{list.nth($gapSizeXs, $i)}px));
+        .col {
+          padding: 0px #{list.nth($gapSizeXs, $i)}px;
+        }
+      }
+    }
+  }
+
+  @media all and (max-width: 900px) {
+    &.row-gap-16,
+    &.row-gap-0 {
+      .col {
+        width: 100%;
+      }
+    }
+  }
+}

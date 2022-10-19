@@ -1,0 +1,55 @@
+.col {
+  box-sizing: border-box;
+  display: block;
+
+  @for $i from 0 through 12 {
+    &.col-offset-#{$i} {
+      margin-left: calc((100% / 12) * #{$i});
+    }
+    &.col-#{$i} {
+      @if $i==0 {
+        display: none;
+      }
+      width: calc((100% / 12) * #{$i});
+    }
+  }
+  @media all and (max-width: 1600px) {
+    @for $i from 0 through 12 {
+      &.col-md-offset-#{$i} {
+        margin-left: calc((100% / 12) * #{$i});
+      }
+      &.col-md-#{$i} {
+        @if $i==0 {
+          display: none;
+        }
+        width: calc((100% / 12) * #{$i});
+      }
+    }
+  }
+  @media all and (max-width: 1200px) {
+    @for $i from 0 through 12 {
+      &.col-sm-offset-#{$i} {
+        margin-left: calc((100% / 12) * #{$i});
+      }
+      &.col-sm-#{$i} {
+        @if $i==0 {
+          display: none;
+        }
+        width: calc((100% / 12) * #{$i});
+      }
+    }
+  }
+  @media all and (max-width: 900px) {
+    @for $i from 0 through 12 {
+      &.col-xs-offset-#{$i} {
+        margin-left: calc((100% / 12) * #{$i});
+      }
+      &.col-xs-#{$i} {
+        @if $i==0 {
+          display: none;
+        }
+        width: calc((100% / 12) * #{$i});
+      }
+    }
+  }
+}
