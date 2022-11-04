@@ -11,9 +11,5 @@ You can install the module via `npm` or `yarn`:
 npm install codeebo-react-grid
 ```
 
-```sh
-yarn add react-countdown-simple
-```
-
 ## Avaliable components:
 Row, Col, Grid, Container and scss spacings.
