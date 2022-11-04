@@ -11,9 +11,21 @@ You can install the module via `npm` or `yarn`:
 npm install codeebo-react-grid
 ```
 
-```sh
-yarn add react-countdown-simple
-```
-
 ## Avaliable components:
 Row, Col, Grid, Container and scss spacings.
+
+## Usage:
+
+```tsx
+<Row gap={16}>
+  <Col size={[2, 3, 6, 12]} offset={[1, 1, 0, 0]}> Your content </Col>
+  <Col size={[3, 4, 6, 12]} offset={[1, 0, 0, 0]}> Your content </Col>
+  <Col size={[3, 4, 6, 12]} offset={[1, 0, 0, 0]}> Your content </Col>
+</Row>
+```
+
+### Size/offset array index means:
+- 1st - large desktop
+- 2nd - medium desktop
+- 3th - tablet
+- 4th - mobile
