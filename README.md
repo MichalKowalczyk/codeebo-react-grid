@@ -13,3 +13,13 @@ npm install codeebo-react-grid
 
 ## Avaliable components:
 Row, Col, Grid, Container and scss spacings.
+
+## Usage:
+
+```tsx
+<Row gap={16}>
+  <Col size={[3, 4, 6, 12]} offset={[1, 1, 0, 0]}> Your content </Col>
+  <Col size={[3, 4, 6, 12]} offset={[1, 1, 0, 0]}> Your content </Col>
+  <Col size={[3, 4, 6, 12]} offset={[1, 1, 0, 0]}> Your content </Col>
+</Row>
+```
