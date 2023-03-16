@@ -1,0 +1,54 @@
+@keyframes clockwise {
+  to {
+    transform: rotate(360deg) translatez(0);
+  }
+}
+.LoadingSpinner {
+  border-style: solid;
+  border-color: hsla(0, 0%, 100%, 0.9) hsla(0, 0%, 100%, 0.9) hsla(0, 0%, 100%, 0.4) hsla(0, 0%, 100%, 0.4);
+  border-radius: 100%;
+  animation: clockwise 1s linear infinite;
+  display: inline-block;
+  position: absolute;
+  opacity: 0;
+
+  &.xs {
+    height: 16px;
+    width: 16px;
+    border-width: 2px;
+  }
+
+  &.xl {
+    height: 32px;
+    width: 32px;
+    border-width: 4px;
+  }
+
+  &.xxl{
+    height: 64px;
+    width: 64px;
+    border-width: 6px;
+  }
+
+  &.xxxl{
+    height: 96px;
+    width: 96px;
+    border-width: 8px;
+  }
+
+  &.active {
+    opacity: 1;
+  }
+
+  &.invert {
+    border-color: hsla(0, 0%, 0%, 0.9) hsla(0, 0%, 0%, 0.9) hsla(0, 0%, 0%, 0.4) hsla(0, 0%, 0%, 0.4);
+  }
+}
+
+.theme-dark {
+  .LoadingSpinner {
+    &.invert {
+      border-color: hsla(0, 0%, 100%, 0.9) hsla(0, 0%, 100%, 0.9) hsla(0, 0%, 100%, 0.4) hsla(0, 0%, 100%, 0.4);
+    }
+  }
+}

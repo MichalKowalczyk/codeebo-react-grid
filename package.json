@@ -1,6 +1,6 @@
 {
   "name": "codeebo-react-grid",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "React Grid Components - Row, Col, Grid, Container",
   "repository": "MichalKowalczyk/codeebo-react-grid",
   "license": "MIT",
@@ -25,7 +25,9 @@
     "build": "rollup -c",
     "start": "rollup -c -w"
   },
-  "dependencies": {},
+  "dependencies": {
+    "react-fast-compare": "^3.2.0"
+  },
   "peerDependencies": {
     "react": ">= 16.3.0",
     "react-dom": ">= 16.3.0"
