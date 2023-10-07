@@ -4,11 +4,9 @@
   float: right;
 
   .action-btn {
-    padding: 4px 1px;
+    padding: 2px 2px;
     span {
       display: block;
-      transform: scaleX(1.4) translateY(1px);
-      line-height: 0;
       font-size: 1.4rem;
       pointer-events: none;
     }

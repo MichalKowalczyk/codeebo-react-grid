@@ -6,15 +6,17 @@ interface Props {
   children: React.ReactNode;
   defaultBorder?: boolean;
   disabled?: boolean;
+  className?: string;
 }
 
 const ActionBtnWrapper: React.FC<Props> = (props: Props) => {
+  const {defaultBorder, disabled, className="", children, onClick} = props;
   return (
     <div
-      className={`crg action-btn-wrapper ${props.defaultBorder ? "default-border" : ""} ${props.disabled ? "action-btn-wrapper--disabled" : ""}`}
-      onClick={props.onClick}
+      className={`crg action-btn-wrapper ${defaultBorder ? "default-border" : ""} ${disabled ? "action-btn-wrapper--disabled" : ""} ${className}`}
+      onClick={onClick}
     >
-      {props.children}
+      {children}
     </div>
   );
 };
