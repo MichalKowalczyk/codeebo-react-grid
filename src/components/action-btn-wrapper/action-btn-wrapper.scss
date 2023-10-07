@@ -1,0 +1,22 @@
+.crg.action-btn-wrapper {
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 8px 11px;
+  margin: 0px 4px;
+  user-select: none;
+
+  &.default-border {
+    box-shadow: inset 0px 0px 0px 1px var(--color-border-light);
+  }
+  &:hover {
+    box-shadow: inset 0px 0px 0px 1px var(--color-fonts);
+  }
+
+  &.action-btn-wrapper--disabled {
+    pointer-events: none !important;
+    color: var(--color-fonts-inactive);
+    box-shadow: inset 0px 0px 0px 1px var(--color-border-lighter);
+  }
+}

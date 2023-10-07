@@ -1,0 +1,91 @@
+:root {
+  --color-primary: rgba(204, 0, 0, 1);
+  --color-primary-10a: rgba(204, 0, 0, 0.1);
+  --color-primary-20a: rgba(204, 0, 0, 0.2);
+  --color-primary-30a: rgba(204, 0, 0, 0.3);
+  --color-primary-50a: rgba(204, 0, 0, 0.5);
+
+  --color-primary-dark: rgba(190, 0, 0, 1);
+
+  --color-secondary: rgb(190, 0, 0);
+  --color-secondary-10a: rgba(204, 0, 0, 0.1);
+  --color-secondary-30a: rgba(204, 0, 0, 0.3);
+  --color-secondary-50a: rgba(204, 0, 0, 0.5);
+
+  --color-background: rgba(255, 255, 255);
+  --color-background-00a: rgba(255, 255, 255, 0);
+  --color-bg-box: rgba(255, 255, 255, 1);
+  --color-bg-box-dark: rgba(10, 10, 10, 1);
+
+  --color-bg-panel: rgba(238, 238, 238);
+  --color-bg-panel-00a: rgba(238, 238, 238, 0);
+  --color-bg-panel-10a: rgba(238, 238, 238, 0.1);
+  --color-bg-panel-30a: rgba(238, 238, 238, 0.3);
+  --color-bg-panel-60a: rgba(238, 238, 238, 0.6);
+
+  --color-fonts-primary: rgb(190, 0, 0);
+  --color-fonts: rgba(0, 0, 0);
+  --color-fonts-on-primary: rgb(255, 255, 255);
+
+  --color-fonts-05a: rgba(0, 0, 0, 0.05);
+  --color-fonts-inactive: rgba(120, 120, 120);
+
+  --color-border-light: rgba(190, 190, 190, 1);
+  --color-border-lighter: rgba(220, 220, 220, 1);
+  --color-border-superlight: rgba(240, 240, 240, 1);
+
+  --color-boxshadow: rgba(0, 0, 0, 0.15);
+  --color-boxshadow-light: rgba(0, 0, 0, 0.05);
+
+  --color-inputs-autofill-bg: #ffcccc;
+
+  --color-error: rgb(200, 10, 10);
+
+  --color-overlay: rgba(0, 0, 0, 0.5);
+}
+
+.theme-dark:root {
+  --color-primary: rgb(195, 0, 0);
+  --color-primary-10a: rgba(195, 0, 0, 0.1);
+  --color-primary-20a: rgba(195, 0, 0, 0.2);
+  --color-primary-30a: rgba(195, 0, 0, 0.3);
+  --color-primary-50a: rgba(195, 0, 0, 0.5);
+
+  --color-primary-dark: rgb(190, 0, 0);
+
+  --color-secondary: rgb(195, 0, 0);
+  --color-secondary-10a: rgba(195, 0, 0, 0.1);
+  --color-secondary-30a: rgba(195, 0, 0, 0.3);
+  --color-secondary-50a: rgba(195, 0, 0, 0.5);
+
+  --color-background: rgba(34, 34, 34, 1);
+  --color-background-00a: rgba(34, 34, 34, 0);
+  --color-bg-box: rgba(40, 40, 40, 1);
+  --color-bg-box-dark: rgba(24, 24, 24, 1);
+  --color-bg-panel: rgba(28, 28, 28, 1);
+  --color-bg-panel-00a: rgba(28, 28, 28, 0);
+  --color-bg-panel-10a: rgba(28, 28, 28, 0.15);
+  --color-bg-panel-30a: rgba(28, 28, 28, 0.45);
+  --color-bg-panel-60a: rgba(28, 28, 28, 0.7);
+
+  --color-fonts-primary: rgb(223, 0, 0);
+  --color-fonts-on-primary: rgb(230, 230, 230);
+  --color-fonts: rgb(230, 230, 230);
+
+  --color-fonts-05a: rgba(240, 240, 240, 0.05);
+
+  --color-fonts-inactive: rgba(150, 150, 150);
+
+  --color-border-light: rgba(100, 100, 100, 1);
+  --color-border-lighter: rgba(70, 70, 70, 1);
+  --color-border-superlight: rgba(50, 50, 50, 1);
+
+  --color-boxshadow: rgba(0, 0, 0, 0.1);
+  --color-boxshadow-light: rgba(0, 0, 0, 0.05);
+
+  --color-inputs-autofill-bg: #332222;
+
+  --color-error: rgb(200, 10, 10);
+
+  --color-overlay: rgba(0, 0, 0, 0.6);
+}
