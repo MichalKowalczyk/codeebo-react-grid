@@ -34,7 +34,7 @@ const Menu: React.FC<Props> = (props: Props) => {
   };
 
   return filteredNullItems.length > 0 ? (
-    <div className={`select-menu ${className}`}>
+    <div className={`crg select-menu ${className}`}>
       <div>
         <summary className={disabled ? "summary--disabled" : ""} onClick={open}>
           {children ? (
