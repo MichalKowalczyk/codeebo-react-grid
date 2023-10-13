@@ -30,8 +30,6 @@ export const StandardList: Story = {
       ["Surname", "surname", 4],
       ["Email", "email", 4],
     ],
-
-    rowChildren: (x: any) => null,
     hideHeader: false,
     // actions?: NumberStringTuple;
     status: "finished",
