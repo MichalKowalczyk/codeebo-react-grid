@@ -5,9 +5,9 @@ const meta: any = {
   title: "Example/generic-list",
   component: GenericList,
   tags: ["autodocs"],
-  // parameters: {
-  //   layout: "centered",
-  // },
+  parameters: {
+    layout: "centered",
+  },
 } satisfies Meta<typeof GenericList>;
 
 export default meta;
@@ -30,5 +30,14 @@ export const StandardList: Story = {
       ["Surname", "surname", 4],
       ["Email", "email", 4],
     ],
+
+    rowChildren: (x: any) => null,
+    hideHeader: false,
+    // actions?: NumberStringTuple;
+    status: "finished",
+    inputProps: {
+      onChange: (value: Array<object> | object) => alert(JSON.stringify(value)),
+      multiselect: true,
+    },
   },
 };
