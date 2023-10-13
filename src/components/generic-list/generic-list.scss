@@ -1,4 +1,11 @@
 .generic-list {
+
+  @media all and (max-width: 1200px) {
+    border-top: 1px solid var(--color-border-lighter);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+  
   .list-row-children {
     border-left: 2px dashed var(--color-border-lighter);
     border-bottom: 1px solid var(--color-border-lighter);
@@ -31,18 +38,38 @@
 
     border: 1px solid rgba(0, 0, 0, 0);
     align-items: center;
-
+    .only-mobile-header-in-row {
+      display: none;
+    }
+    @media all and (max-width: 1200px) {
+      flex-wrap: wrap;
+      .only-mobile-header-in-row {
+        display: block;
+        line-height: 1;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+    }
     .cell-0 {
       width: auto;
       padding: 6px 16px;
       min-width: 50px;
+      @media all and (max-width: 1200px) {
+        padding: 8px;
+      }
     }
 
     @for $i from 1 through 12 {
       .cell-#{$i} {
         width: calc((100% / 12) * $i);
         padding: 6px 16px;
-        // font-weight: 500;
+        @media all and (max-width: 1200px) {
+          padding: 8px;
+          width: calc(50% - 16px);
+        }
+        @media all and (max-width: 600px) {
+          width: 100%;
+        }
       }
     }
 
@@ -72,6 +99,9 @@
 
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
+    @media all and (max-width: 1200px) {
+      display: none;
+    }
   }
 
   .list-row-wrapper {
@@ -105,12 +135,15 @@
     }
   }
 
+
+  
   .list-row {
     font-size: 1.4rem;
     line-height: 1.4;
     transition-duration: 0.15s;
     border: 1px solid var(--color-border-lighter);
     border-top: 1px solid rgba(0, 0, 0, 0);
+
 
     &.inactive {
       background: var(--color-bg-panel-30a);

@@ -23,7 +23,9 @@
   },
   "scripts": {
     "build": "rollup -c",
-    "start": "rollup -c -w"
+    "start": "rollup -c -w",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "react-detect-click-outside": "^1.1.7",
@@ -34,16 +36,32 @@
     "react-dom": ">= 16.3.0"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.23.2",
+    "@babel/preset-react": "^7.22.15",
+    "@babel/preset-typescript": "^7.23.2",
+    "@storybook/addon-essentials": "^7.4.6",
+    "@storybook/addon-interactions": "^7.4.6",
+    "@storybook/addon-links": "^7.4.6",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/addon-styling-webpack": "^0.0.5",
+    "@storybook/blocks": "^7.4.6",
+    "@storybook/react": "^7.4.6",
+    "@storybook/react-webpack5": "^7.4.6",
+    "@storybook/testing-library": "^0.2.2",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
     "babel-core": "^6.26.3",
     "babel-runtime": "^6.26.0",
+    "css-loader": "^6.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rollup": "^1.32.1",
     "rollup-plugin-sass": "^1.12.16",
     "rollup-plugin-typescript2": "^0.34.1",
     "sass": "^1.55.0",
+    "storybook": "^7.4.6",
+    "style-loader": "^3.3.3",
+    "sass-loader": "^13.3.2",
     "typescript": "^4.8.4"
   },
   "files": [

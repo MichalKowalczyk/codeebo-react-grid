@@ -1,9 +1,12 @@
-@keyframes clockwise {
-  to {
-    transform: rotate(360deg) translatez(0);
-  }
-}
+
 .LoadingSpinner {
+
+  @keyframes clockwise {
+    to {
+      transform: rotate(360deg) translatez(0);
+    }
+  }
+  
   border-style: solid;
   border-color: hsla(0, 0%, 100%, 0.9) hsla(0, 0%, 100%, 0.9) hsla(0, 0%, 100%, 0.4) hsla(0, 0%, 100%, 0.4);
   border-radius: 100%;

@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import GenericListCell from "./generic-list-cell";
 import GenericListHeader from "./generic-list-header";
 import GenericListStatus from "./generic-list-status";
-import "./generic-list.scss";
 import isEqual from "react-fast-compare";
 import LoadingSpinner from "../LoadingSpinner/LoadingSpinner";
+import "./generic-list.scss";
 
 export interface NumberStringTuple extends Array<string | string | number | (((x: any) => any) | undefined)> {
   0: string;
@@ -92,15 +92,15 @@ const GenericList: React.FC<GenericListProps> = (props) => {
               const isSelected = inputProps && selectItems.findIndex((x: any) => isEqual(x, row)) !== -1;
               return (
                 <React.Fragment key={row_index}>
-                  <div
-                    key={row_index}
-                    className={`list-row ${rowClassName ? rowClassName(row) : ""} ${isSelected ? "selected" : ""}`}
-                    onClick={inputProps ? (e) => selectRow(e, row, isSelected) : undefined}
-                  >
+                  <div key={row_index} className={`list-row ${rowClassName ? rowClassName(row) : ""} ${isSelected ? "selected" : ""}`} onClick={inputProps ? (e) => selectRow(e, row, isSelected) : undefined}>
                     {inputProps ? <div className="select-icon"></div> : null}
                     {cols
                       ? cols.map((col, col_index: number) => {
-                          return <GenericListCell className="standard-col" col={col} row={row} key={col_index} />;
+                          return (
+                            <>
+                              <GenericListCell className="standard-col" col={col} row={row} key={col_index} />
+                            </>
+                          );
                         })
                       : null}
                     {actions ? <GenericListCell col={actions} row={row} className="actions" onClick={handleClickAction} /> : null}
