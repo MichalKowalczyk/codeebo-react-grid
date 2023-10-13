@@ -28,7 +28,7 @@ interface GenericListProps {
   };
 }
 
-const GenericList: React.FC<GenericListProps> = (props) => {
+const GenericList = (props: GenericListProps) => {
   const { data, cols, actions, inputProps, status = "default", rowClassName, rowChildren, hideHeader } = props;
   const [selectItems, setSelectItems] = useState<Array<object>>([]);
 
@@ -96,14 +96,10 @@ const GenericList: React.FC<GenericListProps> = (props) => {
                     {inputProps ? <div className="select-icon"></div> : null}
                     {cols
                       ? cols.map((col, col_index: number) => {
-                          return (
-                            <>
-                              <GenericListCell className="standard-col" col={col} row={row} key={col_index} />
-                            </>
-                          );
+                          return <GenericListCell hideHeader className="standard-col" col={col} row={row} key={col_index} />;
                         })
                       : null}
-                    {actions ? <GenericListCell col={actions} row={row} className="actions" onClick={handleClickAction} /> : null}
+                    {actions ? <GenericListCell hideHeader col={actions} row={row} className="actions" onClick={handleClickAction} /> : null}
                   </div>
                   {rowChildren && rowChildren(row) ? <div className="list-row-children">{rowChildren(row)}</div> : null}
                 </React.Fragment>
