@@ -16,6 +16,15 @@
 }
 .inline-flex,
 .flex {
+  &.center-x {
+    justify-content: center;
+  }
+  &.right-x {
+    justify-content: flex-end;
+  }
+  &.center-y {
+    align-items: center;
+  }
   &.column {
     flex-direction: column;
     &.center-x {

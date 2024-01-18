@@ -1,6 +1,6 @@
 {
   "name": "codeebo-react-grid",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "description": "React Grid Components - Row, Col, Grid, Container",
   "repository": "MichalKowalczyk/codeebo-react-grid",
   "license": "MIT",
@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "react-detect-click-outside": "^1.1.7",
-    "react-fast-compare": "^3.2.0"
+    "react-fast-compare": "^3.2.2"
   },
   "peerDependencies": {
     "react": ">= 16.3.0",
@@ -56,12 +56,12 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rollup": "^1.32.1",
-    "rollup-plugin-sass": "^1.12.16",
+    "rollup-plugin-sass": "^1.12.21",
     "rollup-plugin-typescript2": "^0.34.1",
     "sass": "^1.55.0",
-    "storybook": "^7.4.6",
-    "style-loader": "^3.3.3",
-    "sass-loader": "^13.3.2",
+    "storybook": "^7.6.10",
+    "style-loader": "^3.3.4",
+    "sass-loader": "^13.3.3",
     "typescript": "^4.8.4"
   },
   "files": [

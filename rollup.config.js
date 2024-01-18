@@ -14,6 +14,7 @@ export default {
       strict: false
     }
   ],
-  plugins: [sass({ insert: true, output: 'dist/styles.css' }), typescript()],
+  plugins: [sass({ insert: true, output: 'dist/styles.css', outputStyle: 'compressed' }),
+  typescript()],
   external: ['react', 'react-dom']
 }
